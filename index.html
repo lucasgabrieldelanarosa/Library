@@ -8,13 +8,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <form>
-    <label>Title:</label><input type="text" id="title">
-    <br><label>Author:</label><input type="text" id="author">
-    <br><label>Number of Pages:</label><input type="number" id="pages">
-    <br><label>Read: </label><input type="checkbox" id="read">
-    <input type="submit" value="Submit" id="submitButton">
-  </form>
+  <section id="left">
+    <form>
+      <h1>Add Books</h1>
+      <div class="inputs">
+        <label>Title:</label><input type="text" id="title" autocomplete="off">
+        <label>Author:</label><input type="text" id="author" autocomplete="off">
+        <label>Number of Pages:</label><input type="number" id="pages" autocomplete="off">
+        <div class="read-div">
+            <label>Have you read it?</label>
+            <input class="checkboxInput" type="checkbox" id="read">
+      </div>
+      <input class="submitInput" type="submit" value="Submit" id="submitButton">
+    </div>
+    </form>
+  </section>
 
   <main id="myBooks">
   </main>
